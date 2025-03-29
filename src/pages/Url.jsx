@@ -21,33 +21,6 @@ function Url() {
                     <th>#</th>
                     <th>Url Name</th>
                     <th>Url</th>
-                    <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                {urls.map(url =>
-                    <tr key = {url.url_id}>
-                    <td>{url.url_id}</td>
-                    <td>{url.name}</td>
-                    <td>{url.url}</td>
-                    <td>
-                        <Button variant="primary">save</Button>
-                        <Button variant="success">rescan</Button>
-                        <Button variant="danger">remove</Button>
-                    </td>
-                    </tr>
-                    )}
-
-                </tbody>
-            </Table>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                    <th>#</th>
-                    <th>Url Name</th>
-                    <th>Url</th>
-                    <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,6 +32,7 @@ function Url() {
                     <td>{url.url}</td>
                     </tr>
                     )}
+
                 </tbody>
             </Table>
         </div>
