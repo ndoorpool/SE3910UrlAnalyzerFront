@@ -1,9 +1,4 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+
 
 .logo {
   height: 6em;
@@ -40,3 +35,27 @@
 .read-the-docs {
   color: #888;
 }
+
+.url-information {
+  background-color: #e0ccba;
+}
+
+.url-input {
+  background-color: lightblue;
+}
+
+.url-saved {
+  background-color: teal;
+}
+
+#edit {
+  background-color: #e3e36d;
+ }
+ 
+#rescan {
+   background-color: #6de38c;
+ }
+ 
+#remove {
+  background-color: #e36d75;
+ }

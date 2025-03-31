@@ -4,27 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
 import Login from './pages/Login'
-import Book from './pages/Book'
 import Url from './pages/Url'
 import UrlCreate from './pages/UrlCreate'
+import { Container } from 'react-bootstrap'
 
 function App() {
 
   return (
-    <>
-      <div>
+      <Container fluid className="p-0">
       <Header/>
         <Routes>
-          <Route path="/" element = {<Home/>}/>
-          <Route path="/login" element = {<Login/>}/>
-          <Route path="/book" element = {<Book/>}/>
+          <Route path="/" element = {<Login/>}/>
           <Route path="/url" element = {<Url/>}/>
           <Route path="/createUrl" element = {<UrlCreate/>}/>
         </Routes>
-      </div>
-    </>
+      </Container>
   )
 }
 
